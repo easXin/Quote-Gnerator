@@ -22,3 +22,45 @@ body {
     /*must be used together*/
     justify-content: center;
 }
+
+.quote-container {
+    width: auto;
+    max-width: 800px;
+    /* top-bottom  left-right*/
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0  10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    /* relative size compared to the root element*/
+    font-size: 2.75rem;
+    /* 1 rem = 16 pixels by default*/
+}
+
+.lont-quote {
+    /* for reponsive design */
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+/* Medua query helps to overwirte anything else in the code */
+@media screen and (max-width:1000px){ 
+    /* anything less than 1000px will be impacted by this query */
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
+}

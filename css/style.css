@@ -30,7 +30,7 @@ body {
     padding: 20px 30px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0  10px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .quote-text {
@@ -54,13 +54,45 @@ body {
     font-weight: 400;
     font-style: italic;
 }
+
+.button-container{
+    margin-top : 15px;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    cursor: pointer;
+    border:none;
+    border-radius: 10px;
+    background-color: #333;
+    color:#fff;
+    padding:0.5rem 1.8rem;
+    /* h-offset v-offset shadow color */
+    box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+
+}
+button:hover{
+    filter:brightness(110%);
+}
+
+button:active{
+    /* move the button down bu 0,0.3rem*/
+    transform: translate(0,0.3rem);
+    box-shadow: 0 0.3rem rgba(255,255,255,0.65);
+}
+.twitter-button:hover{
+    color:#38a1f3;
+
+}
 /* Medua query helps to overwirte anything else in the code */
-@media screen and (max-width:1000px){ 
+@media screen and (max-width:1000px) {
+
     /* anything less than 1000px will be impacted by this query */
-    .quote-container{
+    .quote-container {
         margin: auto 10px;
     }
-    .quote-text{
+
+    .quote-text {
         font-size: 2.5rem;
     }
 }
